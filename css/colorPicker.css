@@ -1,0 +1,10 @@
+.colorPicker {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.colorPicker input[type=text] {
+  margin-right: 10px;
+  width: 50px;
+}
