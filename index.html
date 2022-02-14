@@ -22,9 +22,16 @@
   </header>
   <section class="colorPicker">
     <h3>Convert RGB to Barycentric Maxwell Hue</h3>
-      <label for="color1">R</label>: <input type="text" name="color1" value="">
-      <label for="color2">G</label>: <input type="text" name="color2" value="">
-      <label for="color3">B</label>: <input type="text" name="color3" value=""> 
+    <label id="colorLabel1" for="colorValue1">R</label>: <input type="number" id="colorValue1" name="colorValue1" value="0">
+    <label id="colorLabel2"  for="colorValue2">G</label>: <input type="number" id="colorValue2" name="colorValue2" value=".39">
+    <label id="colorLabel3"  for="colorValue3">B</label>: <input type="number" id="colorValue3" name="colorValue3" value="1"> 
+    <div class="colorPickerConverButton" onClick="convertColor()">
+      <button type="button" name="convert">Convert</button>
+    </div>
+    <p id="convertedColorValue1"></p>
+    <p id="convertedColorValue2"></p>
+    <p id="convertedColorValue3"></p>
+    <p id="convertedLuminance"></p>
   </section>
   <footer>
     <p>&copy;2022 David Oberlander - <a href="https://github.com/DevsketchCode/AgileColorPicker" target="_blank">GitHub Link</a> | 

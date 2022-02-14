@@ -4,7 +4,16 @@
   text-align: center;
 }
 
-.colorPicker input[type=text] {
+.colorPicker input[type=number] {
   margin-right: 10px;
   width: 50px;
+}
+
+.colorPicker button {
+  margin: 20px;
+  padding: 10px;
+}
+
+#convertedLuminance {
+  display: none;
 }
