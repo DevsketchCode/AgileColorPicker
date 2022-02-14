@@ -1,7 +1,6 @@
 function convertColor() {
   // create color objects
   const rgbColors = {red: 0, green: 0, blue: 0};
-  const maxwellColors = {rho: 0, gamma: 0, beta: 0};
 
   // Get user values and convert to floats;
   rgbColors.red = parseFloat(document.querySelector("#colorValue1").value);
