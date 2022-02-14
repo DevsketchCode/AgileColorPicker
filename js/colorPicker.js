@@ -24,6 +24,9 @@ function convertColor() {
   var beta = roundFloatTo2Decimal(RGBToBarycentricMaxwellHue(rgbColors.blue, rgbColors));
   var luminance = roundFloatTo2Decimal(getLuminance(rgbColors));
 
+  // Display the color in the ColorBox
+  displayColor(rgbColors);
+
   // Display the results
   document.querySelector("#convertedColorValue1").innerHTML = "&rho; (rho): " + rho;
   document.querySelector("#convertedColorValue2").innerHTML = "&gamma; (gamma): " + gamma;
@@ -31,6 +34,12 @@ function convertColor() {
   luminanceText = document.querySelector("#convertedLuminance");
   luminanceText.style.display = "block";
   luminanceText.innerHTML = "L: " + luminance;
+}
+
+function displayColor(rgbColors) {
+  var colorBox = document.querySelector('#colorBox');
+  // Convert numbers to the 0 to 255 range then set background color
+  colorBox.style.backgroundColor = "rgb(" + rgbColors.red*255 + ", " + rgbColors.green*255 + ", " + rgbColors.blue*255 + ")";
 }
 
 function RGBToBarycentricMaxwellHue(convertingColor, rgbColors) {

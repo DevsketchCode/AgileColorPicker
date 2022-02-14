@@ -1,3 +1,10 @@
+.colorPickerWrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
 .colorPicker {
   margin: 0 auto;
   width: 80%;
@@ -16,4 +23,11 @@
 
 #convertedLuminance {
   display: none;
+}
+
+#colorBox {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
 }
