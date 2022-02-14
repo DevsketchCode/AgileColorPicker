@@ -22,9 +22,9 @@
   </header>
   <section class="colorPicker">
     <h3>Convert RGB to Barycentric Maxwell Hue</h3>
-    <label id="colorLabel1" for="colorValue1">R</label>: <input type="number" id="colorValue1" name="colorValue1" value="0">
-    <label id="colorLabel2"  for="colorValue2">G</label>: <input type="number" id="colorValue2" name="colorValue2" value=".39">
-    <label id="colorLabel3"  for="colorValue3">B</label>: <input type="number" id="colorValue3" name="colorValue3" value="1"> 
+    <label id="colorLabel1" for="colorValue1">R</label>: <input type="number" id="colorValue1" name="colorValue1" min="0", max="1" step="0.01" value="0" onKeyUp="validateInput(this.id)" onClick="this.select();">
+    <label id="colorLabel2"  for="colorValue2">G</label>: <input type="number" id="colorValue2" name="colorValue2" min="0", max="1" step="0.01" value=".39" onKeyUp="validateInput(this.id)" onClick="this.select();">
+    <label id="colorLabel3"  for="colorValue3">B</label>: <input type="number" id="colorValue3" name="colorValue3" min="0", max="1" step="0.01" value="1" onKeyUp="validateInput(this.id)" onClick="this.select();"> 
     <div class="colorPickerConverButton" onClick="convertColor()">
       <button type="button" name="convert">Convert</button>
     </div>

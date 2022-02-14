@@ -1,3 +1,14 @@
+// Validate key entries
+function validateInput(id) {
+  var textBox = document.querySelector('#' + id);
+  if(textBox.value == "e" || textBox.value < 0 || textBox.value == "") {
+    textBox.value = "0";
+  } else if (textBox.value > 1) {
+    textBox.value = "1";
+  }
+}
+
+// Functions
 function convertColor() {
   // create color objects
   const rgbColors = {red: 0, green: 0, blue: 0};
